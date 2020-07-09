@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Electrical Ammo",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:GunZ"
     },
     "stackSize": 64,
     "enchantability": 0,

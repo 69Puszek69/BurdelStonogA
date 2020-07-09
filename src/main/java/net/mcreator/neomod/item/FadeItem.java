@@ -8,10 +8,10 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 
+import net.mcreator.neomod.itemgroup.GunZItemGroup;
 import net.mcreator.neomod.NeomodModElements;
 
 @NeomodModElements.ModElement.Tag
@@ -48,7 +48,7 @@ public class FadeItem extends NeomodModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.EMPTY;
 			}
-		}, 3, -1f, new Item.Properties().group(ItemGroup.COMBAT)) {
+		}, 3, -1f, new Item.Properties().group(GunZItemGroup.tab)) {
 			@Override
 			@OnlyIn(Dist.CLIENT)
 			public boolean hasEffect(ItemStack itemstack) {

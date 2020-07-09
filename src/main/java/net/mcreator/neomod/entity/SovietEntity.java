@@ -17,7 +17,6 @@ import net.minecraft.world.World;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.item.SpawnEggItem;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
@@ -34,6 +33,7 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.client.renderer.entity.model.VillagerModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 
+import net.mcreator.neomod.itemgroup.GunZItemGroup;
 import net.mcreator.neomod.NeomodModElements;
 
 @NeomodModElements.ModElement.Tag
@@ -50,7 +50,7 @@ public class SovietEntity extends NeomodModElements.ModElement {
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.95f)).build("soviet")
 						.setRegistryName("soviet");
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -1, -1, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("soviet"));
+		elements.items.add(() -> new SpawnEggItem(entity, -1, -1, new Item.Properties().group(GunZItemGroup.tab)).setRegistryName("soviet"));
 	}
 
 	@Override

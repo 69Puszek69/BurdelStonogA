@@ -1,15 +1,50 @@
 
 package net.mcreator.neomod.item;
 
+import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.fml.network.NetworkHooks;
+import net.minecraftforge.fml.network.FMLPlayMessages;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.World;
+import net.minecraft.util.math.MathHelper;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.Hand;
+import net.minecraft.util.ActionResultType;
+import net.minecraft.util.ActionResult;
+import net.minecraft.network.IPacket;
+import net.minecraft.item.UseAction;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.entity.projectile.AbstractArrowEntity;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.IRendersAsItem;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.EntityClassification;
+import net.minecraft.entity.Entity;
+import net.minecraft.enchantment.Enchantments;
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.client.renderer.entity.SpriteRenderer;
+import net.minecraft.client.Minecraft;
+
+import net.mcreator.neomod.itemgroup.GunZItemGroup;
+import net.mcreator.neomod.NeomodModElements;
+
+import java.util.Random;
+
 @NeomodModElements.ModElement.Tag
 public class M4a1silencerItem extends NeomodModElements.ModElement {
-
 	@ObjectHolder("neomod:m_4a_1silencer")
 	public static final Item block = null;
-
 	@ObjectHolder("neomod:entitybulletm_4a_1silencer")
 	public static final EntityType arrow = null;
-
 	public M4a1silencerItem(NeomodModElements instance) {
 		super(instance, 15);
 	}
@@ -28,12 +63,9 @@ public class M4a1silencerItem extends NeomodModElements.ModElement {
 		RenderingRegistry.registerEntityRenderingHandler(arrow,
 				renderManager -> new SpriteRenderer(renderManager, Minecraft.getInstance().getItemRenderer()));
 	}
-
 	public static class ItemRanged extends Item {
-
 		public ItemRanged() {
-			super(new Item.Properties().group(ItemGroup.COMBAT).maxDamage(100));
-
+			super(new Item.Properties().group(GunZItemGroup.tab).maxDamage(100));
 			setRegistryName("m_4a_1silencer");
 		}
 
@@ -65,13 +97,9 @@ public class M4a1silencerItem extends NeomodModElements.ModElement {
 						break;
 					}
 				}
-
 				if (entity.abilities.isCreativeMode || EnchantmentHelper.getEnchantmentLevel(Enchantments.INFINITY, itemstack) > 0 || slotID != -1) {
-
 					ArrowCustomEntity entityarrow = shoot(world, entity, random, 1f, 5, 5);
-
 					itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
-
 					if (entity.abilities.isCreativeMode) {
 						entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.CREATIVE_ONLY;
 					} else {
@@ -89,16 +117,13 @@ public class M4a1silencerItem extends NeomodModElements.ModElement {
 								entity.inventory.deleteStack(stack);
 						}
 					}
-
 				}
 			}
 		}
-
 	}
 
 	@OnlyIn(value = Dist.CLIENT, _interface = IRendersAsItem.class)
 	public static class ArrowCustomEntity extends AbstractArrowEntity implements IRendersAsItem {
-
 		public ArrowCustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			super(arrow, world);
 		}
@@ -149,9 +174,7 @@ public class M4a1silencerItem extends NeomodModElements.ModElement {
 				this.remove();
 			}
 		}
-
 	}
-
 	public static ArrowCustomEntity shoot(World world, LivingEntity entity, Random random, float power, double damage, int knockback) {
 		ArrowCustomEntity entityarrow = new ArrowCustomEntity(arrow, entity, world);
 		entityarrow.shoot(entity.getLookVec().x, entity.getLookVec().y, entity.getLookVec().z, power * 2, 0);
@@ -160,14 +183,12 @@ public class M4a1silencerItem extends NeomodModElements.ModElement {
 		entityarrow.setDamage(damage);
 		entityarrow.setKnockbackStrength(knockback);
 		world.addEntity(entityarrow);
-
 		int x = (int) entity.getPosX();
 		int y = (int) entity.getPosY();
 		int z = (int) entity.getPosZ();
 		world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
 				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")),
 				SoundCategory.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
-
 		return entityarrow;
 	}
 
@@ -177,19 +198,15 @@ public class M4a1silencerItem extends NeomodModElements.ModElement {
 		double d1 = target.getPosX() - entity.getPosX();
 		double d3 = target.getPosZ() - entity.getPosZ();
 		entityarrow.shoot(d1, d0 - entityarrow.getPosY() + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 1.6F, 12.0F);
-
 		entityarrow.setSilent(true);
 		entityarrow.setIsCritical(true);
 		entity.world.addEntity(entityarrow);
-
 		int x = (int) entity.getPosX();
 		int y = (int) entity.getPosY();
 		int z = (int) entity.getPosZ();
 		entity.world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
 				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")),
 				SoundCategory.PLAYERS, 1, 1f / (new Random().nextFloat() * 0.5f + 1));
-
 		return entityarrow;
 	}
-
 }
