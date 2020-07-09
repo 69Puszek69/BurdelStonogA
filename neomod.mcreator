@@ -173,24 +173,6 @@
       "registry_name": "h_kusps"
     },
     {
-      "name": "Glocksilencer",
-      "type": "gun",
-      "sortid": 20,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "glocksilencer"
-    },
-    {
-      "name": "Glock",
-      "type": "gun",
-      "sortid": 21,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "glock"
-    },
-    {
       "name": "ElectricalAmmoRecipe",
       "type": "recipe",
       "sortid": 22,
@@ -225,6 +207,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "uxexinium_ore"
+    },
+    {
+      "name": "Glock",
+      "type": "gun",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glock"
+    },
+    {
+      "name": "Glocksilencer",
+      "type": "gun",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glocksilencer"
     }
   ],
   "variable_elements": [],
@@ -303,6 +303,7 @@
   "language_map": {
     "en_us": {
       "block.neomod.guncrafting": "Guncrafting",
+      "item.neomod.glock": "Glock",
       "item.neomod.magnum_sniper_rifle": "Magnum Sniper Rifle",
       "item.neomod.soviet": "Soviet Spawn Egg",
       "entity.neomod.ukrainiets": "Ukrainiec",
@@ -319,6 +320,7 @@
       "item.neomod.heavy_ammo": "Heavy Ammo",
       "item.neomod.electrical_ammo": "Electrical Ammo",
       "item.neomod.m_4a_1silencer": "M4a1silencer",
+      "item.neomod.glocksilencer": "Glocksilencer",
       "item.neomod.h_kusps": "HKusp s",
       "item.neomod.sova_9_0": "Sova 90",
       "item.neomod.m_4a_1": "M4a1",
