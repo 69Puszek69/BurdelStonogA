@@ -198,6 +198,99 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "glock_silencer_crafting"
+    },
+    {
+      "name": "RecipeBook",
+      "type": "item",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipe_book"
+    },
+    {
+      "name": "RecipeOpener",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipe_opener",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RecipeBookMain",
+      "type": "gui",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipe_book_main"
+    },
+    {
+      "name": "AmmoRecipesPage1",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ammo_recipes_page_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RecipeBookAmmoPage1",
+      "type": "gui",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipe_book_ammo_page_1"
     }
   ],
   "variable_elements": [],
@@ -278,6 +371,7 @@
       "block.neomod.guncrafting": "Guncrafting",
       "item.neomod.magnum_sniper_rifle": "Magnum Sniper Rifle",
       "item.neomod.soviet": "Soviet Spawn Egg",
+      "item.neomod.recipe_book": "Recipe Book",
       "entity.neomod.ukrainiets": "Ukrainiec",
       "item.neomod.ukrainiets": "Ukrainiec Spawn Egg",
       "item.neomod.ak_4_7": "AK 4 7",

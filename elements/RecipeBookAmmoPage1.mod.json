@@ -1,0 +1,69 @@
+{
+  "_fv": 8,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 560,
+    "height": 332,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Recipe Book",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Recipe Book",
+          "x": 372,
+          "y": 78
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "heavyammo-crafting.png",
+          "name": "heavyammo-crafting.png",
+          "x": 156,
+          "y": 114
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Heavy Ammo",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Heavy Ammo",
+          "x": 192,
+          "y": 96
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "electric_ammo_crafting.png",
+          "name": "electric_ammo_crafting.png",
+          "x": 156,
+          "y": 258
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Electric Ammo",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Electric Ammo",
+          "x": 192,
+          "y": 258
+        }
+      }
+    ]
+  }
+}
