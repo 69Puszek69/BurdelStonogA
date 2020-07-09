@@ -1,0 +1,92 @@
+{
+  "kar48k": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "neomod:pubg-mobile-sms-ringtone-kar98k-message-tone-iphone-message-tone",
+        "stream": false
+      }
+    ]
+  },
+  "ak47": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "neomod:ak47-single-shot-sound-effect",
+        "stream": false
+      }
+    ]
+  },
+  "phgun": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "neomod:electric-sound-effect",
+        "stream": false
+      }
+    ]
+  },
+  "g36c": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "neomod:gunshot-machine-gun-gunshot_-machine-gun_-heckler-_-koch-g36_-single-shot_-5.56-caliber_-near",
+        "stream": false
+      }
+    ]
+  },
+  "magnum": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "neomod:44-magnum-single-gunshot-sound-effect",
+        "stream": false
+      }
+    ]
+  },
+  "sova90": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "neomod:gun-submachine-gun-automatic-5.7-caliber-fn-p90-single-shot-close-perspective-03-warfare-sound_.",
+        "stream": false
+      }
+    ]
+  },
+  "hkusp": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "neomod:one-shot-sound-p18c",
+        "stream": false
+      }
+    ]
+  },
+  "rg": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "neomod:russian_rage_cyka_blyat_sound_effect_online-audio-converter.com",
+        "stream": false
+      }
+    ]
+  },
+  "ab": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "neomod:ah_blyat_sound_effect_online-audio-converter.com",
+        "stream": false
+      }
+    ]
+  },
+  "cb": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "neomod:cyka_blyat_sound_effect_online-audio-converter.com",
+        "stream": false
+      }
+    ]
+  }
+}

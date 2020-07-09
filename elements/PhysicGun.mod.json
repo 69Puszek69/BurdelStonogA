@@ -1,0 +1,36 @@
+{
+  "_fv": 8,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "laser_gun",
+    "customModelName": "Normal",
+    "name": "Physic Gun",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 100,
+    "actionSound": {
+      "value": "CUSTOM:phgun"
+    },
+    "hasGlow": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.0,
+    "bulletDamage": 0.5,
+    "bulletKnockback": 34,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:ElectricalAmmo"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "nerf.png"
+  }
+}

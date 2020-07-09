@@ -1,0 +1,201 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "HeavyAmmo",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "heavy_ammo"
+    },
+    {
+      "name": "Kar48k",
+      "type": "gun",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kar_4_8k"
+    },
+    {
+      "name": "AK47",
+      "type": "gun",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ak_4_7"
+    },
+    {
+      "name": "Fade",
+      "type": "tool",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fade"
+    },
+    {
+      "name": "PhysicGun",
+      "type": "gun",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "physic_gun"
+    },
+    {
+      "name": "G36c",
+      "type": "gun",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "g_3_6c"
+    },
+    {
+      "name": "MagnumSniperRifle",
+      "type": "gun",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magnum_sniper_rifle"
+    },
+    {
+      "name": "Soviet",
+      "type": "mob",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "soviet"
+    },
+    {
+      "name": "ElectricalAmmo",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "electrical_ammo"
+    },
+    {
+      "name": "Sova90",
+      "type": "gun",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sova_9_0"
+    },
+    {
+      "name": "HKusp",
+      "type": "gun",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "h_kusp"
+    },
+    {
+      "name": "Ukrainiets",
+      "type": "mob",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ukrainiets"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "kar48k",
+      "file": "pubg-mobile-sms-ringtone-kar98k-message-tone-iphone-message-tone",
+      "category": "master"
+    },
+    {
+      "name": "ak47",
+      "file": "ak47-single-shot-sound-effect",
+      "category": "master"
+    },
+    {
+      "name": "phgun",
+      "file": "electric-sound-effect",
+      "category": "master"
+    },
+    {
+      "name": "g36c",
+      "file": "gunshot-machine-gun-gunshot_-machine-gun_-heckler-_-koch-g36_-single-shot_-5.56-caliber_-near",
+      "category": "master"
+    },
+    {
+      "name": "magnum",
+      "file": "44-magnum-single-gunshot-sound-effect",
+      "category": "master"
+    },
+    {
+      "name": "sova90",
+      "file": "gun-submachine-gun-automatic-5.7-caliber-fn-p90-single-shot-close-perspective-03-warfare-sound_.",
+      "category": "master"
+    },
+    {
+      "name": "hkusp",
+      "file": "one-shot-sound-p18c",
+      "category": "master"
+    },
+    {
+      "name": "rg",
+      "file": "russian_rage_cyka_blyat_sound_effect_online-audio-converter.com",
+      "category": "master"
+    },
+    {
+      "name": "ab",
+      "file": "ah_blyat_sound_effect_online-audio-converter.com",
+      "category": "master"
+    },
+    {
+      "name": "cb",
+      "file": "cyka_blyat_sound_effect_online-audio-converter.com",
+      "category": "master"
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "item.neomod.magnum_sniper_rifle": "Magnum Sniper Rifle",
+      "item.neomod.soviet": "Soviet Spawn Egg",
+      "entity.neomod.ukrainiets": "Ukrainiec",
+      "item.neomod.ukrainiets": "Ukrainiec Spawn Egg",
+      "item.neomod.ak_4_7": "AK 4 7",
+      "item.neomod.kar_4_8k": "Kar48k",
+      "item.neomod.g_3_6c": "G36c",
+      "item.neomod.fade": "Fade",
+      "item.neomod.physic_gun": "Physic Gun",
+      "entity.neomod.soviet": "Soviet",
+      "item.neomod.heavy_ammo": "Heavy Ammo",
+      "item.neomod.electrical_ammo": "Electrical Ammo",
+      "item.neomod.sova_9_0": "Sova 90",
+      "item.neomod.h_kusp": "HK usp"
+    }
+  },
+  "workspaceSettings": {
+    "modid": "neomod",
+    "modName": "NeoMod",
+    "version": "1.0.0",
+    "author": "redre, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.15.2",
+    "modElementsPackage": "net.mcreator.neomod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202000322116
+}
