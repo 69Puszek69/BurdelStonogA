@@ -51,9 +51,6 @@ public class NeomodModElements {
 	public final List<Supplier<EntityType<?>>> entities = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public NeomodModElements() {
-		sounds.put(new ResourceLocation("neomod", "kar48k"), new net.minecraft.util.SoundEvent(new ResourceLocation("neomod", "kar48k")));
-		sounds.put(new ResourceLocation("neomod", "ak47"), new net.minecraft.util.SoundEvent(new ResourceLocation("neomod", "ak47")));
-		sounds.put(new ResourceLocation("neomod", "phgun"), new net.minecraft.util.SoundEvent(new ResourceLocation("neomod", "phgun")));
 		sounds.put(new ResourceLocation("neomod", "g36c"), new net.minecraft.util.SoundEvent(new ResourceLocation("neomod", "g36c")));
 		sounds.put(new ResourceLocation("neomod", "magnum"), new net.minecraft.util.SoundEvent(new ResourceLocation("neomod", "magnum")));
 		sounds.put(new ResourceLocation("neomod", "sova90"), new net.minecraft.util.SoundEvent(new ResourceLocation("neomod", "sova90")));
@@ -61,6 +58,13 @@ public class NeomodModElements {
 		sounds.put(new ResourceLocation("neomod", "rg"), new net.minecraft.util.SoundEvent(new ResourceLocation("neomod", "rg")));
 		sounds.put(new ResourceLocation("neomod", "ab"), new net.minecraft.util.SoundEvent(new ResourceLocation("neomod", "ab")));
 		sounds.put(new ResourceLocation("neomod", "cb"), new net.minecraft.util.SoundEvent(new ResourceLocation("neomod", "cb")));
+		sounds.put(new ResourceLocation("neomod", "kar48k"), new net.minecraft.util.SoundEvent(new ResourceLocation("neomod", "kar48k")));
+		sounds.put(new ResourceLocation("neomod", "ak47"), new net.minecraft.util.SoundEvent(new ResourceLocation("neomod", "ak47")));
+		sounds.put(new ResourceLocation("neomod", "phgun"), new net.minecraft.util.SoundEvent(new ResourceLocation("neomod", "phgun")));
+		sounds.put(new ResourceLocation("neomod", "usp_s"), new net.minecraft.util.SoundEvent(new ResourceLocation("neomod", "usp_s")));
+		sounds.put(new ResourceLocation("neomod", "m4_s"), new net.minecraft.util.SoundEvent(new ResourceLocation("neomod", "m4_s")));
+		sounds.put(new ResourceLocation("neomod", "m4"), new net.minecraft.util.SoundEvent(new ResourceLocation("neomod", "m4")));
+		sounds.put(new ResourceLocation("neomod", "silencer"), new net.minecraft.util.SoundEvent(new ResourceLocation("neomod", "silencer")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("neomod").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

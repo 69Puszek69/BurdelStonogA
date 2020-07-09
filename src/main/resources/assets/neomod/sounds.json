@@ -1,31 +1,4 @@
 {
-  "kar48k": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "neomod:pubg-mobile-sms-ringtone-kar98k-message-tone-iphone-message-tone",
-        "stream": false
-      }
-    ]
-  },
-  "ak47": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "neomod:ak47-single-shot-sound-effect",
-        "stream": false
-      }
-    ]
-  },
-  "phgun": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "neomod:electric-sound-effect",
-        "stream": false
-      }
-    ]
-  },
   "g36c": {
     "category": "master",
     "sounds": [
@@ -85,6 +58,69 @@
     "sounds": [
       {
         "name": "neomod:cyka_blyat_sound_effect_online-audio-converter.com",
+        "stream": false
+      }
+    ]
+  },
+  "kar48k": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "neomod:pubg-mobile-sms-ringtone-kar98k-message-tone-iphone-message-tone",
+        "stream": false
+      }
+    ]
+  },
+  "ak47": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "neomod:ak47-single-shot-sound-effect",
+        "stream": false
+      }
+    ]
+  },
+  "phgun": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "neomod:electric-sound-effect",
+        "stream": false
+      }
+    ]
+  },
+  "usp_s": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "neomod:gun_silencer_sound_effect",
+        "stream": false
+      }
+    ]
+  },
+  "m4_s": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "neomod:silencer_sound_effect",
+        "stream": false
+      }
+    ]
+  },
+  "m4": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "neomod:m4_l_sound_effect",
+        "stream": false
+      }
+    ]
+  },
+  "silencer": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "neomod:silencer_sound_effect",
         "stream": false
       }
     ]

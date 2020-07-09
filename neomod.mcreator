@@ -158,21 +158,6 @@
   "variable_elements": [],
   "sound_elements": [
     {
-      "name": "kar48k",
-      "file": "pubg-mobile-sms-ringtone-kar98k-message-tone-iphone-message-tone",
-      "category": "master"
-    },
-    {
-      "name": "ak47",
-      "file": "ak47-single-shot-sound-effect",
-      "category": "master"
-    },
-    {
-      "name": "phgun",
-      "file": "electric-sound-effect",
-      "category": "master"
-    },
-    {
       "name": "g36c",
       "file": "gunshot-machine-gun-gunshot_-machine-gun_-heckler-_-koch-g36_-single-shot_-5.56-caliber_-near",
       "category": "master"
@@ -205,6 +190,41 @@
     {
       "name": "cb",
       "file": "cyka_blyat_sound_effect_online-audio-converter.com",
+      "category": "master"
+    },
+    {
+      "name": "kar48k",
+      "file": "pubg-mobile-sms-ringtone-kar98k-message-tone-iphone-message-tone",
+      "category": "master"
+    },
+    {
+      "name": "ak47",
+      "file": "ak47-single-shot-sound-effect",
+      "category": "master"
+    },
+    {
+      "name": "phgun",
+      "file": "electric-sound-effect",
+      "category": "master"
+    },
+    {
+      "name": "usp_s",
+      "file": "gun_silencer_sound_effect",
+      "category": "master"
+    },
+    {
+      "name": "m4_s",
+      "file": "silencer_sound_effect",
+      "category": "master"
+    },
+    {
+      "name": "m4",
+      "file": "m4_l_sound_effect",
+      "category": "master"
+    },
+    {
+      "name": "silencer",
+      "file": "silencer_sound_effect",
       "category": "master"
     }
   ],

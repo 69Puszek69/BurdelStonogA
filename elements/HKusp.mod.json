@@ -17,7 +17,7 @@
     "shootConstantly": false,
     "usageCount": 100,
     "actionSound": {
-      "value": "CUSTOM:hkusp"
+      "value": "CUSTOM:usp_s"
     },
     "hasGlow": false,
     "enableMeleeDamage": false,
