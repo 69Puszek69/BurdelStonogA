@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "neomod:blocks/planks_oak",
+    "up": "neomod:blocks/crafting_table_top",
+    "north": "neomod:blocks/crafting_table_front",
+    "east": "neomod:blocks/crafting_table_side",
+    "south": "neomod:blocks/crafting_table_front",
+    "west": "neomod:blocks/crafting_table_side",
+    "particle": "neomod:blocks/planks_oak"
+  }
+}

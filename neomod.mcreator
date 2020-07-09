@@ -108,6 +108,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "ukrainiets"
+    },
+    {
+      "name": "Guncrafting",
+      "type": "block",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "guncrafting"
     }
   ],
   "variable_elements": [],
@@ -165,6 +174,7 @@
   ],
   "language_map": {
     "en_us": {
+      "block.neomod.guncrafting": "Guncrafting",
       "item.neomod.magnum_sniper_rifle": "Magnum Sniper Rifle",
       "item.neomod.soviet": "Soviet Spawn Egg",
       "entity.neomod.ukrainiets": "Ukrainiec",
