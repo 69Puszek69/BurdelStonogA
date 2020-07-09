@@ -110,13 +110,13 @@
       "registry_name": "ukrainiets"
     },
     {
-      "name": "Guncrafting",
-      "type": "block",
+      "name": "HeavyAmmoCrafting",
+      "type": "recipe",
       "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "guncrafting"
+      "registry_name": "heavy_ammo_crafting"
     },
     {
       "name": "Aug",
@@ -128,15 +128,6 @@
       "registry_name": "aug"
     },
     {
-      "name": "M4a1silencer",
-      "type": "gun",
-      "sortid": 15,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "m_4a_1silencer"
-    },
-    {
       "name": "M4a1",
       "type": "gun",
       "sortid": 16,
@@ -146,6 +137,15 @@
       "registry_name": "m_4a_1"
     },
     {
+      "name": "M4a1silencer",
+      "type": "gun",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "m_4a_1silencer"
+    },
+    {
       "name": "Silencer",
       "type": "item",
       "sortid": 17,
@@ -153,6 +153,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "silencer"
+    },
+    {
+      "name": "GunZ",
+      "type": "tab",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gun_z"
     }
   ],
   "variable_elements": [],
@@ -242,6 +251,7 @@
       "item.neomod.g_3_6c": "G36c",
       "item.neomod.fade": "Fade",
       "item.neomod.physic_gun": "Physic Gun",
+      "itemGroup.tabgun_z": "Gun Z",
       "entity.neomod.soviet": "Soviet",
       "item.neomod.heavy_ammo": "Heavy Ammo",
       "item.neomod.electrical_ammo": "Electrical Ammo",

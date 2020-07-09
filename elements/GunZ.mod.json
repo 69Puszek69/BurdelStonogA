@@ -1,0 +1,11 @@
+{
+  "_fv": 8,
+  "_type": "tab",
+  "definition": {
+    "name": "Gun Z",
+    "icon": {
+      "value": "CUSTOM:Aug"
+    },
+    "showSearch": true
+  }
+}
