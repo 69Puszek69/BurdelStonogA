@@ -207,6 +207,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "glock"
+    },
+    {
+      "name": "GlockSilencerCrafting",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glock_silencer_crafting"
     }
   ],
   "variable_elements": [],

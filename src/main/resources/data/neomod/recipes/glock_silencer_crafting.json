@@ -1,0 +1,19 @@
+{
+  "group": "neomod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "neomod:silencer"
+    },
+    "1": {
+      "item": "neomod:glocksilencer"
+    }
+  },
+  "result": {
+    "item": "neomod:glocksilencer",
+    "count": 1
+  }
+}
