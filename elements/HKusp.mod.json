@@ -3,12 +3,12 @@
   "_type": "gun",
   "definition": {
     "renderType": 0,
-    "texture": "usp_kill_confirmed",
+    "texture": "usp_s_kill_confirmed",
     "customModelName": "Normal",
     "name": "HK usp",
     "specialInfo": [],
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:GunZ"
     },
     "stackSize": 1,
     "ammoItem": {

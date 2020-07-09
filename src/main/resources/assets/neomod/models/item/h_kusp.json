@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "neomod:items/usp_kill_confirmed"
+    "layer0": "neomod:items/usp_s_kill_confirmed"
   },
   "display": {
     "thirdperson_righthand": {
