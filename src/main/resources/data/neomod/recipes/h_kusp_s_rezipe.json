@@ -1,0 +1,16 @@
+{
+  "group": "neomod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "neomod:silencer"
+    },
+    {
+      "item": "neomod:h_kusps"
+    }
+  ],
+  "result": {
+    "item": "neomod:h_kusp",
+    "count": 1
+  }
+}
