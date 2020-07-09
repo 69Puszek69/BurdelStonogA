@@ -3,21 +3,21 @@
   "_type": "gun",
   "definition": {
     "renderType": 0,
-    "texture": "m4a1_sliencer",
+    "texture": "glock",
     "customModelName": "Normal",
-    "name": "M4a1silencer",
+    "name": "Glock",
     "specialInfo": [],
     "creativeTab": {
       "value": "COMBAT"
     },
     "stackSize": 1,
     "ammoItem": {
-      "value": "CUSTOM:HeavyAmmo"
+      "value": ""
     },
     "shootConstantly": false,
     "usageCount": 100,
     "actionSound": {
-      "value": "CUSTOM:m4_s"
+      "value": "entity.arrow.shoot"
     },
     "hasGlow": false,
     "enableMeleeDamage": false,
@@ -31,6 +31,6 @@
       "value": "CUSTOM:HeavyAmmo"
     },
     "bulletModel": "Default",
-    "customBulletModelTexture": "m4a1_sliencer.png"
+    "customBulletModelTexture": "glock.png"
   }
 }

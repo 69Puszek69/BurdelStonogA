@@ -30,8 +30,6 @@ import net.minecraft.entity.IRendersAsItem;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
-import net.minecraft.enchantment.Enchantments;
-import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.client.renderer.entity.SpriteRenderer;
 import net.minecraft.client.Minecraft;
 
@@ -40,13 +38,13 @@ import net.mcreator.neomod.NeomodModElements;
 import java.util.Random;
 
 @NeomodModElements.ModElement.Tag
-public class M4a1silencerItem extends NeomodModElements.ModElement {
-	@ObjectHolder("neomod:m_4a_1silencer")
+public class GlocksilencerItem extends NeomodModElements.ModElement {
+	@ObjectHolder("neomod:glocksilencer")
 	public static final Item block = null;
-	@ObjectHolder("neomod:entitybulletm_4a_1silencer")
+	@ObjectHolder("neomod:entitybulletglocksilencer")
 	public static final EntityType arrow = null;
-	public M4a1silencerItem(NeomodModElements instance) {
-		super(instance, 15);
+	public GlocksilencerItem(NeomodModElements instance) {
+		super(instance, 20);
 	}
 
 	@Override
@@ -54,7 +52,7 @@ public class M4a1silencerItem extends NeomodModElements.ModElement {
 		elements.items.add(() -> new ItemRanged());
 		elements.entities.add(() -> (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
 				.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
-				.size(0.5f, 0.5f)).build("entitybulletm_4a_1silencer").setRegistryName("entitybulletm_4a_1silencer"));
+				.size(0.5f, 0.5f)).build("entitybulletglocksilencer").setRegistryName("entitybulletglocksilencer"));
 	}
 
 	@Override
@@ -66,7 +64,7 @@ public class M4a1silencerItem extends NeomodModElements.ModElement {
 	public static class ItemRanged extends Item {
 		public ItemRanged() {
 			super(new Item.Properties().group(ItemGroup.COMBAT).maxDamage(100));
-			setRegistryName("m_4a_1silencer");
+			setRegistryName("glocksilencer");
 		}
 
 		@Override
@@ -89,35 +87,9 @@ public class M4a1silencerItem extends NeomodModElements.ModElement {
 		public void onPlayerStoppedUsing(ItemStack itemstack, World world, LivingEntity entityLiving, int timeLeft) {
 			if (!world.isRemote && entityLiving instanceof ServerPlayerEntity) {
 				ServerPlayerEntity entity = (ServerPlayerEntity) entityLiving;
-				int slotID = -1;
-				for (int i = 0; i < entity.inventory.mainInventory.size(); i++) {
-					ItemStack stack = entity.inventory.mainInventory.get(i);
-					if (stack != null && stack.getItem() == new ItemStack(HeavyAmmoItem.block, (int) (1)).getItem()) {
-						slotID = i;
-						break;
-					}
-				}
-				if (entity.abilities.isCreativeMode || EnchantmentHelper.getEnchantmentLevel(Enchantments.INFINITY, itemstack) > 0 || slotID != -1) {
-					ArrowCustomEntity entityarrow = shoot(world, entity, random, 1f, 5, 5);
-					itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
-					if (entity.abilities.isCreativeMode) {
-						entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.CREATIVE_ONLY;
-					} else {
-						ItemStack stack = entity.inventory.getStackInSlot(slotID);
-						if (new ItemStack(HeavyAmmoItem.block, (int) (1)).isDamageable()) {
-							if (stack.attemptDamageItem(1, random, entity)) {
-								stack.shrink(1);
-								stack.setDamage(0);
-								if (stack.isEmpty())
-									entity.inventory.deleteStack(stack);
-							}
-						} else {
-							stack.shrink(1);
-							if (stack.isEmpty())
-								entity.inventory.deleteStack(stack);
-						}
-					}
-				}
+				ArrowCustomEntity entityarrow = shoot(world, entity, random, 1f, 5, 5);
+				itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
+				entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.DISALLOWED;
 			}
 		}
 	}
@@ -153,7 +125,7 @@ public class M4a1silencerItem extends NeomodModElements.ModElement {
 
 		@Override
 		protected ItemStack getArrowStack() {
-			return new ItemStack(HeavyAmmoItem.block, (int) (1));
+			return null;
 		}
 
 		@Override
@@ -187,8 +159,8 @@ public class M4a1silencerItem extends NeomodModElements.ModElement {
 		int y = (int) entity.getPosY();
 		int z = (int) entity.getPosZ();
 		world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
-				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("neomod:m4_s")), SoundCategory.PLAYERS, 1,
-				1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
+				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")),
+				SoundCategory.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
 		return entityarrow;
 	}
 
@@ -205,8 +177,8 @@ public class M4a1silencerItem extends NeomodModElements.ModElement {
 		int y = (int) entity.getPosY();
 		int z = (int) entity.getPosZ();
 		entity.world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
-				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("neomod:m4_s")), SoundCategory.PLAYERS, 1,
-				1f / (new Random().nextFloat() * 0.5f + 1));
+				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")),
+				SoundCategory.PLAYERS, 1, 1f / (new Random().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}
 }
