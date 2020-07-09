@@ -65,15 +65,6 @@
       "registry_name": "magnum_sniper_rifle"
     },
     {
-      "name": "Soviet",
-      "type": "mob",
-      "sortid": 8,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "soviet"
-    },
-    {
       "name": "ElectricalAmmo",
       "type": "item",
       "sortid": 9,
@@ -99,15 +90,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "h_kusp"
-    },
-    {
-      "name": "Ukrainiets",
-      "type": "mob",
-      "sortid": 12,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "ukrainiets"
     },
     {
       "name": "HeavyAmmoCrafting",
@@ -173,6 +155,24 @@
       "registry_name": "h_kusps"
     },
     {
+      "name": "Glocksilencer",
+      "type": "gun",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glocksilencer"
+    },
+    {
+      "name": "Glock",
+      "type": "gun",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glock"
+    },
+    {
       "name": "ElectricalAmmoRecipe",
       "type": "recipe",
       "sortid": 22,
@@ -207,24 +207,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "uxexinium_ore"
-    },
-    {
-      "name": "Glock",
-      "type": "gun",
-      "sortid": 24,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "glock"
-    },
-    {
-      "name": "Glocksilencer",
-      "type": "gun",
-      "sortid": 25,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "glocksilencer"
     }
   ],
   "variable_elements": [],
