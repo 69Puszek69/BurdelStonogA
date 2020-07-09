@@ -162,6 +162,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "gun_z"
+    },
+    {
+      "name": "HKusps",
+      "type": "gun",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "h_kusps"
     }
   ],
   "variable_elements": [],
@@ -256,6 +265,7 @@
       "item.neomod.heavy_ammo": "Heavy Ammo",
       "item.neomod.electrical_ammo": "Electrical Ammo",
       "item.neomod.m_4a_1silencer": "M4a1silencer",
+      "item.neomod.h_kusps": "HKusp s",
       "item.neomod.sova_9_0": "Sova 90",
       "item.neomod.m_4a_1": "M4a1",
       "item.neomod.h_kusp": "HK usp"

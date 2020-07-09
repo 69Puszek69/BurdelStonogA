@@ -38,13 +38,13 @@ import net.mcreator.neomod.NeomodModElements;
 import java.util.Random;
 
 @NeomodModElements.ModElement.Tag
-public class HKuspItem extends NeomodModElements.ModElement {
-	@ObjectHolder("neomod:h_kusp")
+public class HKuspsItem extends NeomodModElements.ModElement {
+	@ObjectHolder("neomod:h_kusps")
 	public static final Item block = null;
-	@ObjectHolder("neomod:entitybulleth_kusp")
+	@ObjectHolder("neomod:entitybulleth_kusps")
 	public static final EntityType arrow = null;
-	public HKuspItem(NeomodModElements instance) {
-		super(instance, 11);
+	public HKuspsItem(NeomodModElements instance) {
+		super(instance, 19);
 	}
 
 	@Override
@@ -52,7 +52,7 @@ public class HKuspItem extends NeomodModElements.ModElement {
 		elements.items.add(() -> new ItemRanged());
 		elements.entities.add(() -> (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
 				.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
-				.size(0.5f, 0.5f)).build("entitybulleth_kusp").setRegistryName("entitybulleth_kusp"));
+				.size(0.5f, 0.5f)).build("entitybulleth_kusps").setRegistryName("entitybulleth_kusps"));
 	}
 
 	@Override
@@ -64,7 +64,7 @@ public class HKuspItem extends NeomodModElements.ModElement {
 	public static class ItemRanged extends Item {
 		public ItemRanged() {
 			super(new Item.Properties().group(ItemGroup.COMBAT).maxDamage(100));
-			setRegistryName("h_kusp");
+			setRegistryName("h_kusps");
 		}
 
 		@Override
@@ -87,7 +87,7 @@ public class HKuspItem extends NeomodModElements.ModElement {
 		public void onPlayerStoppedUsing(ItemStack itemstack, World world, LivingEntity entityLiving, int timeLeft) {
 			if (!world.isRemote && entityLiving instanceof ServerPlayerEntity) {
 				ServerPlayerEntity entity = (ServerPlayerEntity) entityLiving;
-				ArrowCustomEntity entityarrow = shoot(world, entity, random, 5f, 2.1, 1);
+				ArrowCustomEntity entityarrow = shoot(world, entity, random, 1f, 5, 5);
 				itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
 				entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.DISALLOWED;
 			}
@@ -151,7 +151,7 @@ public class HKuspItem extends NeomodModElements.ModElement {
 		ArrowCustomEntity entityarrow = new ArrowCustomEntity(arrow, entity, world);
 		entityarrow.shoot(entity.getLookVec().x, entity.getLookVec().y, entity.getLookVec().z, power * 2, 0);
 		entityarrow.setSilent(true);
-		entityarrow.setIsCritical(false);
+		entityarrow.setIsCritical(true);
 		entityarrow.setDamage(damage);
 		entityarrow.setKnockbackStrength(knockback);
 		world.addEntity(entityarrow);
@@ -159,7 +159,7 @@ public class HKuspItem extends NeomodModElements.ModElement {
 		int y = (int) entity.getPosY();
 		int z = (int) entity.getPosZ();
 		world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
-				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("neomod:hkusp")), SoundCategory.PLAYERS, 1,
+				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("neomod:usp_s")), SoundCategory.PLAYERS, 1,
 				1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
 		return entityarrow;
 	}
@@ -171,13 +171,13 @@ public class HKuspItem extends NeomodModElements.ModElement {
 		double d3 = target.getPosZ() - entity.getPosZ();
 		entityarrow.shoot(d1, d0 - entityarrow.getPosY() + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 1.6F, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setIsCritical(false);
+		entityarrow.setIsCritical(true);
 		entity.world.addEntity(entityarrow);
 		int x = (int) entity.getPosX();
 		int y = (int) entity.getPosY();
 		int z = (int) entity.getPosZ();
 		entity.world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
-				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("neomod:hkusp")), SoundCategory.PLAYERS, 1,
+				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("neomod:usp_s")), SoundCategory.PLAYERS, 1,
 				1f / (new Random().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}
