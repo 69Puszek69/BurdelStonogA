@@ -164,15 +164,6 @@
       "registry_name": "h_kusp_s_rezipe"
     },
     {
-      "name": "Uxexinium",
-      "type": "item",
-      "sortid": 21,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "uxexinium"
-    },
-    {
       "name": "ElectricalAmmoRecipe",
       "type": "recipe",
       "sortid": 22,
@@ -180,15 +171,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "electrical_ammo_recipe"
-    },
-    {
-      "name": "UxexiniumOre",
-      "type": "block",
-      "sortid": 23,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "uxexinium_ore"
     },
     {
       "name": "Glocksilencer",
