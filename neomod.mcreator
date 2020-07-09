@@ -122,7 +122,7 @@
       "name": "Aug",
       "type": "gun",
       "sortid": 14,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "aug"
@@ -131,7 +131,7 @@
       "name": "M4a1",
       "type": "gun",
       "sortid": 16,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "m_4a_1"
@@ -140,7 +140,7 @@
       "name": "M4a1silencer",
       "type": "gun",
       "sortid": 15,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "m_4a_1silencer"
