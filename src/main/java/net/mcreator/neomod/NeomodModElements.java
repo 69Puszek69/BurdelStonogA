@@ -65,6 +65,8 @@ public class NeomodModElements {
 		sounds.put(new ResourceLocation("neomod", "m4_s"), new net.minecraft.util.SoundEvent(new ResourceLocation("neomod", "m4_s")));
 		sounds.put(new ResourceLocation("neomod", "m4"), new net.minecraft.util.SoundEvent(new ResourceLocation("neomod", "m4")));
 		sounds.put(new ResourceLocation("neomod", "silencer"), new net.minecraft.util.SoundEvent(new ResourceLocation("neomod", "silencer")));
+		sounds.put(new ResourceLocation("neomod", "glock"), new net.minecraft.util.SoundEvent(new ResourceLocation("neomod", "glock")));
+		sounds.put(new ResourceLocation("neomod", "glock_s"), new net.minecraft.util.SoundEvent(new ResourceLocation("neomod", "glock_s")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("neomod").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

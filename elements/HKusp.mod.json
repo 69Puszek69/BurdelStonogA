@@ -3,7 +3,7 @@
   "_type": "gun",
   "definition": {
     "renderType": 0,
-    "texture": "usp_s_kill_confirmed",
+    "texture": "usp_kill_confirmed",
     "customModelName": "Normal",
     "name": "HK usp",
     "specialInfo": [],

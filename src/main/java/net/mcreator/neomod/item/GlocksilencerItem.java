@@ -46,7 +46,7 @@ public class GlocksilencerItem extends NeomodModElements.ModElement {
 	@ObjectHolder("neomod:entitybulletglocksilencer")
 	public static final EntityType arrow = null;
 	public GlocksilencerItem(NeomodModElements instance) {
-		super(instance, 25);
+		super(instance, 20);
 	}
 
 	@Override
@@ -187,8 +187,8 @@ public class GlocksilencerItem extends NeomodModElements.ModElement {
 		int y = (int) entity.getPosY();
 		int z = (int) entity.getPosZ();
 		world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
-				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")),
-				SoundCategory.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
+				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("neomod:glock_s")), SoundCategory.PLAYERS,
+				1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
 		return entityarrow;
 	}
 
@@ -205,8 +205,8 @@ public class GlocksilencerItem extends NeomodModElements.ModElement {
 		int y = (int) entity.getPosY();
 		int z = (int) entity.getPosZ();
 		entity.world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
-				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")),
-				SoundCategory.PLAYERS, 1, 1f / (new Random().nextFloat() * 0.5f + 1));
+				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("neomod:glock_s")), SoundCategory.PLAYERS,
+				1, 1f / (new Random().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}
 }

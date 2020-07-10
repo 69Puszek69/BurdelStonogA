@@ -124,5 +124,23 @@
         "stream": false
       }
     ]
+  },
+  "glock": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "neomod:9mm_gunshot_sound_effect_online-audio-converter.com",
+        "stream": false
+      }
+    ]
+  },
+  "glock_s": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "neomod:silencer_sound_effect_hd",
+        "stream": false
+      }
+    ]
   }
 }
